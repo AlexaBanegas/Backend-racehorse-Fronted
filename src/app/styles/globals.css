@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0a0a0a; 
+  --foreground: #ededed;
+  --sidebar-width: 260px; 
+  --sidebar-bg: #111927;
+  --main-bg: #0b0f19; 
+  --sidebar-width: 280px;
+}
+
+body {
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  background-color: var(--main-bg)
+}
+
+
+.dashboard-layout {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+}
+
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #0f1117; 
+  min-height: 100vh;
+  overflow-y: auto;
+}
+
+
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background:( #1a1c2e 0%, #0a0a0a 100%); 
+}
+
+
+.sidebar {
+  width: var(--sidebar-width);
+  min-width: var(--sidebar-width);
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  background-color: #111827;
+}
+
+.button-clos{
+  background-color: transparent;
+  border: none;
+  color: var(--foreground);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
