@@ -114,8 +114,7 @@ export default function HabilitiesPage() {
         <h2 className="page-title">Gestión de Jockeys y Habilidades</h2>
       </div>
 
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
-        
+    
 
         <div className="data-card form-container">
           <h3 className="card-header">1. Registrar Nueva Habilidad</h3>
@@ -170,7 +169,7 @@ export default function HabilitiesPage() {
             {editando && <button type="button" onClick={() => {setEditando(null); setSeleccion({idJockey:'', idHabilidad:''})}}>Cancelar</button>}
           </form>
         </div>
-      </div>
+
 
 
       <div className="form-group" style={{marginTop: '30px'}}>
